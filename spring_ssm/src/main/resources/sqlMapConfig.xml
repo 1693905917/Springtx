@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--加载properties文件-->
+<!--    <properties resource="jdbc.properties"></properties>-->
+
+    <!--定义别名-->
+    <typeAliases>
+<!--        <typeAlias type="com.itheima.domain.Account" alias="account"></typeAlias>-->
+<!--        当使用package时，只扫描当前包的话，也就是name是com.itheima.domain时，
+            扫描出来的alias属性默认都是当前包下的实体名称的开头小写比如Account实体就是account
+            当然在package也可以扫描当前文件：也就是name是com.itheima.domain.Account-->
+                <package name="com.itheima.domain"/>
+    </typeAliases>
+
+    <!--环境-->
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${jdbc.driver}"/>-->
+<!--                <property name="url" value="${jdbc.url}"/>-->
+<!--                <property name="username" value="${jdbc.user}"/>-->
+<!--                <property name="password" value="${jdbc.password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+    <!--加载映射-->
+<!--    <mappers>-->
+<!--        <mapper resource="com/itheima/mapper/AccountMapper.xml"></mapper>-->
+<!--    </mappers>-->
+
+
+
+</configuration>
